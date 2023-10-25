@@ -6,13 +6,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define m 5 // número total de linhas na matriz
-#define n 5 // número total de colunas na matriz
+#define m 5 
+#define n 5 
 #define thread_count 5 // número total de threads
 
-double A[m][n] = {{1, 2, 3,4,5}, {6,7, 8, 8, 10}, {11,12, 13, 14,15},{16,17,18,19,20},{21,22,23,24,25}}; //$
-double x[n] = {1, 2, 3,4,5}; // vetor x
-double y[m]; // vetor y
+double A[m][n] = {{1, 2, 3,4,5}, {6,7, 8, 8, 10}, {11,12, 13, 14,15},{16,17,18,19,20},{21,22,23,24,25}}; 
+double x[n] = {1, 2, 3,4,5}; 
+double y[m];
 
 void Pth_mat_vect(void rank) {
     long my_rank = (long) rank;
@@ -43,7 +43,7 @@ int main() {
 
     free(thread_handles);
 
-    printf("Resultado da multiplicação da matriz pelo vetor:\n");
+    printf("Resultado após multiplicação: \n");
     for(int i=0; i<m; i++) 
         printf("%f\n", y[i]);
 
