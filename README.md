@@ -11,6 +11,6 @@ instalar git e gcc
 
 Clonar o repositório : `https://github.com/rodmironiuc/Pthreads-parte1`
 
-Compilar o arquivo : `gcc source.c -o (novoArquivoExecutavel)`
+Compilar o arquivo : `gcc -pthread -o (novoArquivoExecutavel) (nomeDoArquivo)`
 
 Executar o arquivo criado : `./(novoArquivoExecutavel)`
